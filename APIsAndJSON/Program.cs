@@ -1,10 +1,18 @@
-﻿namespace APIsAndJSON
+﻿using Newtonsoft.Json.Linq;
+using System;
+using System.Net.Http.Headers;
+
+namespace APIsAndJSON
 {
     public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World");
+
+            QuoteGenerator.KanyeQuote();
+
+            QuoteGenerator.RonQuote();
+
         }
     }
 }
