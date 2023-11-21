@@ -23,10 +23,10 @@ namespace APIsAndJSON
 
             var kanyeQuote = JObject.Parse(kanyeResponse).GetValue("quote").ToString();
 
-            Console.WriteLine($"----------------------");
-            Console.WriteLine($"Kanye: '{kanyeQuote}'");
-            Console.WriteLine($"----------------------");
             Console.WriteLine();
+            Console.WriteLine($"Kanye: '{kanyeQuote}'");
+            Console.WriteLine();
+            
         }
 
         public static void RonQuote()
@@ -39,10 +39,10 @@ namespace APIsAndJSON
 
             var ronQuote = JArray.Parse(ronResponse);
 
-            Console.WriteLine($"----------------------");
-            Console.WriteLine($"Ron: '{ronQuote[0]}'");
-            Console.WriteLine($"----------------------");
             Console.WriteLine();
+            Console.WriteLine($"Ron: '{ronQuote[0]}'");
+            Console.WriteLine();
+l
         }
     }
 }
